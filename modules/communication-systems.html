@@ -1,16 +1,360 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Module 1 - Communication Systems</title><link rel="stylesheet" href="assets/style.css"></head><body>
-<aside class="sidebar"><h2>APSC 270</h2><a href="#">Home</a><h3>Foundations</h3><a href="#">1. Communication Systems</a><a href="#">2. Signals</a><a href="#">3. Systems</a></aside>
-<main class="main">
-<div class="hero"><span class="badge">Module 1</span><h1>Introduction to Communication Systems</h1><p>Everything from mobile phones and Wi‑Fi to satellite communications relies on the same fundamental ideas explored in this course.</p></div>
-<div class="card"><h2>Learning Outcomes</h2><ul><li>Describe the purpose of communication systems.</li><li>Explain how information is transmitted.</li><li>Identify major communication-system components.</li><li>Compare analog and digital communication.</li><li>Recognize communication technologies in everyday life.</li></ul></div>
-<div class="card"><h2>Why Study Communication Systems?</h2><p>Before information can be stored, processed, or displayed, it must first be transmitted. Communication engineers design systems that move information efficiently, accurately, and reliably.</p><ul><li>Phone calls</li><li>Text messages</li><li>Wi‑Fi</li><li>Bluetooth</li><li>Radio broadcasting</li><li>Satellite communication</li><li>Streaming video</li></ul><p><strong>Reflection:</strong> How many communication systems have you used today?</p></div>
-<div class="card"><h2>Historical Evolution</h2><div class="timeline"><div>1830s - Telegraph</div><div>1876 - Telephone</div><div>1900s - Radio</div><div>1950s - Television</div><div>1980s - Digital Networks</div><div>2000s - Internet Era</div><div>Today - Wireless Everywhere</div></div></div>
-<div class="card"><h2>Communication System Model</h2><p><strong>Information Source → Transmitter → Channel → Receiver → Destination</strong></p><h3>Information Source</h3><p>Produces information such as voice, video, text, or sensor data.</p><h3>Transmitter</h3><p>Converts information into a suitable signal.</p><h3>Channel</h3><p>Carries the signal through air, fiber, copper, or satellite links.</p><h3>Receiver</h3><p>Recovers the information from the received signal.</p><h3>Destination</h3><p>The final user or application.</p></div>
-<div class="card"><h2>Real-World Example: Smartphone Voice Call</h2><table class="table"><tr><th>System Element</th><th>Example</th></tr><tr><td>Source</td><td>Voice</td></tr><tr><td>Transmitter</td><td>Smartphone</td></tr><tr><td>Channel</td><td>Cellular Network</td></tr><tr><td>Receiver</td><td>Smartphone</td></tr><tr><td>Destination</td><td>Listener</td></tr></table></div>
-<div class="card"><h2>Analog vs Digital Communications</h2><h3>Analog</h3><p>Examples: AM radio, FM radio, traditional broadcasting.</p><p>Advantages: Simplicity, continuous signals.</p><p>Challenges: Noise sensitivity.</p><h3>Digital</h3><p>Examples: Wi‑Fi, 5G, Internet, streaming services.</p><p>Advantages: Error correction, compression, encryption, storage.</p></div>
-<div class="card"><h2>Interactive Communication Explorer</h2><details><summary>Source</summary>Produces information.</details><details><summary>Transmitter</summary>Converts information into a signal.</details><details><summary>Channel</summary>Carries the signal.</details><details><summary>Receiver</summary>Recovers information.</details><details><summary>Destination</summary>Final user or application.</details></div>
-<div class="card"><h2>Worked Example</h2><p>A student records a voice message and sends it through a messaging app.</p><details><summary>Show Solution</summary>Source → Student Voice, Transmitter → Smartphone, Channel → Internet Network, Receiver → Recipient Smartphone, Destination → Recipient.</details></div>
-<div class="card"><h2>Knowledge Check</h2><p>Which block carries the signal?</p><details><summary>Answer</summary>Channel.</details><p>Which is primarily digital?</p><details><summary>Answer</summary>Wi‑Fi.</details></div>
-<div class="card"><h2>Key Takeaways</h2><ul><li>Communication systems transfer information.</li><li>Signals carry information.</li><li>All communication systems share common blocks.</li><li>Digital communication dominates modern systems.</li></ul></div>
-<div class="card next"><h2>Looking Ahead</h2><p><strong>Next Module: Signals</strong><br>Learn how information is represented mathematically using signals.</p></div>
-</main></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Module 1 - Communication Systems</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>APSC 270</h2>
+
+        <a href="../index.html">Home</a>
+
+        <h3>Foundations</h3>
+
+        <a href="communication-systems.html">
+            1. Communication Systems
+        </a>
+
+        <a href="signals.html">
+            2. Signals
+        </a>
+
+        <a href="systems.html">
+            3. Systems
+        </a>
+
+        <h3>Frequency Domain</h3>
+
+        <a href="fourier-series.html">
+            4. Fourier Series
+        </a>
+
+        <a href="fourier-transform.html">
+            5. Fourier Transform
+        </a>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="module-shell">
+
+            <section class="module-hero">
+
+                <div class="module-label">
+                    Module 1
+                </div>
+
+                <h1>
+                    Introduction to Communication Systems
+                </h1>
+
+                <p class="module-subtitle">
+                    Every phone call, Wi‑Fi connection,
+                    text message, video stream and
+                    satellite transmission depends on
+                    a communication system.
+                </p>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Learning Outcomes</h2>
+
+                <ul class="learning-outcomes">
+
+                    <li>
+                        Describe the purpose of
+                        communication systems.
+                    </li>
+
+                    <li>
+                        Explain how information is
+                        transmitted from source to destination.
+                    </li>
+
+                    <li>
+                        Identify the major components of
+                        a communication system.
+                    </li>
+
+                    <li>
+                        Compare analog and digital systems.
+                    </li>
+
+                    <li>
+                        Recognize communication systems
+                        used every day.
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Why Study Communication Systems?</h2>
+
+                <p>
+                    Communication engineering focuses on
+                    transferring information accurately,
+                    reliably and efficiently.
+                </p>
+
+                <p>
+                    Examples include:
+                </p>
+
+                <ul>
+                    <li>Mobile phones</li>
+                    <li>Wi‑Fi networks</li>
+                    <li>Radio broadcasting</li>
+                    <li>Satellite systems</li>
+                    <li>Internet communications</li>
+                    <li>Video streaming</li>
+                </ul>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Historical Evolution</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <strong>1830s</strong> – Telegraph
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>1876</strong> – Telephone
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>1900s</strong> – Radio
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>1950s</strong> – Television
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>1980s</strong> – Digital Networks
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>Today</strong> – Wireless & Mobile Systems
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Communication System Model</h2>
+
+                <div class="insight-box">
+
+                    Information Source
+                    →
+                    Transmitter
+                    →
+                    Channel
+                    →
+                    Receiver
+                    →
+                    Destination
+
+                </div>
+
+                <h3>Information Source</h3>
+                <p>
+                    Produces information such as speech,
+                    images, text or sensor measurements.
+                </p>
+
+                <h3>Transmitter</h3>
+                <p>
+                    Converts information into a signal
+                    suitable for transmission.
+                </p>
+
+                <h3>Channel</h3>
+                <p>
+                    Carries the signal through air,
+                    cable, optical fibre or satellite links.
+                </p>
+
+                <h3>Receiver</h3>
+                <p>
+                    Recovers the transmitted information.
+                </p>
+
+                <h3>Destination</h3>
+                <p>
+                    The final user or application.
+                </p>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Worked Example</h2>
+
+                <h3>Smartphone Voice Call</h3>
+
+                <table class="example-table">
+
+                    <tr>
+                        <th>System Element</th>
+                        <th>Example</th>
+                    </tr>
+
+                    <tr>
+                        <td>Source</td>
+                        <td>User Voice</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transmitter</td>
+                        <td>Smartphone</td>
+                    </tr>
+
+                    <tr>
+                        <td>Channel</td>
+                        <td>Cellular Network</td>
+                    </tr>
+
+                    <tr>
+                        <td>Receiver</td>
+                        <td>Destination Phone</td>
+                    </tr>
+
+                    <tr>
+                        <td>Destination</td>
+                        <td>Listener</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Analog vs Digital Communications</h2>
+
+                <h3>Analog</h3>
+
+                <ul>
+                    <li>AM radio</li>
+                    <li>FM radio</li>
+                    <li>Continuous signals</li>
+                </ul>
+
+                <h3>Digital</h3>
+
+                <ul>
+                    <li>Wi‑Fi</li>
+                    <li>5G cellular systems</li>
+                    <li>Internet communications</li>
+                    <li>Error correction and encryption</li>
+                </ul>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Knowledge Check</h2>
+
+                <div class="check-box">
+
+                    <strong>
+                        Which block carries the signal?
+                    </strong>
+
+                    <details>
+                        <summary>Show Answer</summary>
+
+                        The Channel.
+
+                    </details>
+
+                </div>
+
+                <div class="check-box">
+
+                    <strong>
+                        Which is primarily a digital
+                        communication system?
+                    </strong>
+
+                    <details>
+                        <summary>Show Answer</summary>
+
+                        Wi‑Fi.
+
+                    </details>
+
+                </div>
+
+            </section>
+
+            <section class="lesson-card">
+
+                <h2>Key Takeaways</h2>
+
+                <ul>
+
+                    <li>
+                        Communication systems transfer
+                        information.
+                    </li>
+
+                    <li>
+                        Signals represent information.
+                    </li>
+
+                    <li>
+                        Every communication system has
+                        common functional blocks.
+                    </li>
+
+                    <li>
+                        Modern systems are primarily digital.
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="lesson-card next-module">
+
+                <h2>Next Module</h2>
+
+                <p>
+                    <strong>Signals</strong>
+                </p>
+
+                <p>
+                    Learn how information is represented
+                    mathematically using signals.
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
