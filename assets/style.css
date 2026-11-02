@@ -1,1 +1,159 @@
 body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f8fafc;color:#1e293b}.layout{display:flex}.sidebar{width:280px;background:#0a4ea1;color:white;min-height:100vh;padding:20px}.sidebar a{color:white;text-decoration:none;display:block;padding:6px 0}.content{flex:1;padding:32px;max-width:1000px}.hero{background:linear-gradient(135deg,#0a4ea1,#2563eb);color:white;padding:40px;border-radius:16px}.card{background:white;padding:20px;border-radius:12px;margin:16px 0;box-shadow:0 2px 6px rgba(0,0,0,.1)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.grid a{text-decoration:none;color:inherit}
+.module-hero {
+    background: linear-gradient(
+        135deg,
+        #0F6CBD,
+        #2563EB
+    );
+    color: white;
+    padding: 48px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.module-label {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.15);
+
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.module-subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-top: 15px;
+}
+
+/* Progress */
+
+.module-progress {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.progress-item {
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #E5E7EB;
+    font-weight: 600;
+}
+
+.progress-current {
+    background: #0F6CBD;
+    color: white;
+}
+
+/* Section cards */
+
+.section-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.08);
+}
+
+/* Communication blocks */
+
+.system-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.system-block {
+    width: 180px;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    color: white;
+
+    text-align: center;
+}
+
+.source-block {
+    background: #16A34A;
+}
+
+.tx-block {
+    background: #2563EB;
+}
+
+.channel-block {
+    background: #7C3AED;
+}
+
+.rx-block {
+    background: #EA580C;
+}
+
+.dest-block {
+    background: #0F766E;
+}
+
+/* Callouts */
+
+.insight-box {
+    background: #EFF6FF;
+    border-left: 6px solid #2563EB;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.warning-box {
+    background: #FFFBEB;
+    border-left: 6px solid #F59E0B;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.real-world-box {
+    background: #ECFDF5;
+    border-left: 6px solid #10B981;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+/* Knowledge checks */
+
+.quiz-card {
+    background: #FFF7ED;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    border: 1px solid #FED7AA;
+}
+
+/* Summary */
+
+.summary-card {
+    background: #F0FDF4;
+
+    border-left: 6px solid #10B981;
+
+    border-radius: 12px;
+
+    padding: 20px;
+}
