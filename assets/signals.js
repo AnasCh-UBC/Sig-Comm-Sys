@@ -1,0 +1,1 @@
+function draw(){let A=+a.value,F=+f.value,x=[],y=[];for(let i=0;i<600;i++){let t=i/100;x.push(t);y.push(A*Math.cos(2*Math.PI*F*t));}Plotly.newPlot('plot',[{x,y}],{margin:{t:30},title:'Cosine Signal'});}a.oninput=draw;f.oninput=draw;draw();
